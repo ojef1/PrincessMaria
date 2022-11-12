@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="logar.css">
+    <script src="js.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="principal.html">
+                <img src="img/logo2.png" alt="logo" width="60">
+            </a>
+        </div>
+        <nav>
+            <img src="icons/email.svg" alt="email" width="25">
+            <a href="mailto:ojefdev@gmail.com " target="_blank">E-mail da loja</a>
+            <img src="icons/telefone.svg" alt="telefone" width="25">
+            <a href="#" onclick="numero()">Número da loja</a>
+        </nav>
+    </header>
+    <section class="Login">
+        <div class="teto">
+            <div class="teto2">
+                <div class="texto-teto">Bem vindo!</div>
+            </div>
+        </div>
+        <div class="corpo">
+            <form name="form-login" method="POST" action="login.jsp">
+                <input type="text" name="txtemail" id="login" placeholder="E-mail ou CPF" required>
+                <input type="password" name="txtsenha" minlength="5" placeholder="Senha" required><br>
+                <div class="es">
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+                <button type="submit" class="btn1" onclick="verificarLogin()">Entrar</button>
+                <div class="btn2">
+                    <a href="cadastrar.html" target="_blank"><h3>Sou cliente novo</h3></a>
+                </div>
+                <div class="pp"><a href="#">Politica de Privacidade</a></div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

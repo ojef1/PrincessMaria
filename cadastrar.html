@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastrar.css">
+    <script src="js.js"></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="principal.html">
+                <img src="img/logo2.png" alt="logo" width="60">
+            </a>
+        </div>
+        <nav>
+            <img src="icons/email.svg" alt="email" width="25">
+            <a href="#">E-mail da loja</a>
+            <img src="icons/telefone.svg" alt="telefone" width="25">
+            <a href="#">Número da loja</a>
+        </nav>
+    </header>
+    <section class="cadastro">
+        <div class="corpo">
+            <form name="formCadastro" method="POST" action="cadastro.jsp">
+                <input type="text" name="txtNome" placeholder="Nome completo" id="txtNome" required>
+                <input type="number" name="txtCPF" placeholder="CPF" required id="cpf">
+                <input type="text" name="txtDtnasc" placeholder="Data de nascimento" onfocus="this.type='date'" required >
+                <input type="number" name="txtTel" placeholder="Seu telefone" required id="tel">
+                <input type="text" name="txtEmail" placeholder="E-mail" required id="email">
+                <input type="password" name="txtSenha" placeholder="Senha"required>
+                <input type="number" name="txtCEP" placeholder="CEP" required>
+                <input type="text" name="txtRua" placeholder="Nome da rua" required>
+                <input type="number" name="txtNumCasa" placeholder="Número da casa" required>
+                <input type="text" name="txtCidade" placeholder="Cidade"required>
+                <input type="text" name="txtEstado" placeholder="Estado" required>
+                <input type="submit" onclick="verificar()" value="Cadastrar"></input>
+                
+            </form>
+        </div>
+
+    </section>
+</body>
+</html>
